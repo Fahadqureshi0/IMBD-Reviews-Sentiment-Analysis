@@ -7,13 +7,13 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 # Loading Tokenizer File
 
-with open("IMBD Reviews Sentiment Analysis/tokenizer.pkl", "rb" ) as file:
+with open("New folder/tokenizer.pkl", "rb" ) as file:
     tokenizer = pickle.load(file)
 
 # Loading Model file
 
 model = tf.keras.models.load_model(
-    "IMBD Reviews Sentiment Analysis/imbd-setiment-analysis-classifier.h5"
+    "New folder/imbd-setiment-analysis-classifier.h5"
 )
 
 
